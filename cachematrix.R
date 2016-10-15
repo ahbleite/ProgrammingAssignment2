@@ -1,20 +1,11 @@
-##  These functions create an special matrix that can calculate and cache its own inverse 
-
-## Function Name:
-## Description: Creates a special "matrix" object that can cache its own inverse
+##  These functions create an special matrix that calculate and cache its own inverse 
 
 ##  Function:
 ##    makeCacheMatrix <- function(x = matrix())
 ##  Args:
 ##    x: an invertible matrix
-##  Description: Returns the inverse of a matrix from the cache, 
+##  Description: 
 ##    Creates a special "matrix" object that can cache its own inverse
-##  Returns:
-##    The inverse of matrix x
-##  Sample: 
-##    source("cachematrix.R")
-##    my_matrix <- makeCacheMatrix( matrix(c(4,3,3,2),2,2))
-##    cacheSolve(my_matrix)
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
